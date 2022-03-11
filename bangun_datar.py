@@ -1,4 +1,5 @@
 from abc import abstractmethod, ABC
+
 #Class
 class geometri(ABC):
     
@@ -7,6 +8,7 @@ class geometri(ABC):
     def calculate_area(self):
         pass
 
+    
 class Circle(geometri):
     """Kelas untuk membuat sebuah objek lingkaran"""
     
@@ -19,6 +21,9 @@ class Circle(geometri):
             """Method untuk menghitung
             luas lingkaran"""
             print("Area of circle:", self.pi * self.radius * self.radius)
+            
+            
+            
         
 class Square(geometri):
 
@@ -27,6 +32,9 @@ class Square(geometri):
 
     def calculate_area(self):
         print("Area of Square:", self.side*self.side)
+        
+        
+        
         
 class Triangle(geometri):
 
@@ -40,11 +48,9 @@ class Triangle(geometri):
         
 #Function 
 def hello():
-    
     print("Hello")
     
 def pertambahan(a, b):
-    
     return a+b
 
 
